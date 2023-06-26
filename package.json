@@ -1,0 +1,49 @@
+{
+    "name": "base-bailey-mysql",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "pre-copy": "cd .. && npm run  copy.lib base-baileys-mysql",
+        "start": "node index.js",
+        "dev": "nodemon index.js",
+        "lint": "eslint",
+        "migrations:generate": "sequelize-cli migration:generate --name",
+        "migrations:run": "sequelize-cli db:migrate",
+        "migrations:undo": "sequelize-cli db:migrate:undo"
+    },
+    "keywords": [],
+    "dependencies": {
+        "@adiwajshing/baileys": "4.4.0",
+        "@bot-whatsapp/bot": "latest",
+        "@bot-whatsapp/cli": "latest",
+        "@bot-whatsapp/database": "latest",
+        "@bot-whatsapp/portal": "latest",
+        "@bot-whatsapp/provider": "latest",
+        "@hapi/boom": "^10.0.1",
+        "axios": "^1.4.0",
+        "chatgpt": "^5.2.4",
+        "cors": "^2.8.5",
+        "dotenv": "^16.0.3",
+        "express": "^4.18.2",
+        "joi": "^17.9.2",
+        "mime-types": "2.1.35",
+        "morgan": "^1.10.0",
+        "mysql2": "^2.3.3",
+        "node-fetch": "^3.3.1",
+        "openai": "^3.2.1",
+        "pg": "^8.10.0",
+        "sequelize": "^6.31.1",
+        "wa-sticker-formatter": "4.3.2"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "eslint": "^8.39.0",
+        "eslint-config-prettier": "^8.8.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "nodemon": "^2.0.22",
+        "prettier": "^2.8.8",
+        "sequelize-cli": "^6.6.0"
+    }
+}
