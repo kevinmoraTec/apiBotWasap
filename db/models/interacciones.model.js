@@ -20,11 +20,11 @@ const interaccionesShema = {
   },
   preguntaUsuario: {
     allowNull: false,
-    type: DataTypes.STRING,
+    type: DataTypes.TEXT,
   },
   respuestaModelo: {
     allowNull: false,
-    type: DataTypes.STRING,
+    type: DataTypes.TEXT,
   },
   fechaInteraccion: {
     allowNull: false,
